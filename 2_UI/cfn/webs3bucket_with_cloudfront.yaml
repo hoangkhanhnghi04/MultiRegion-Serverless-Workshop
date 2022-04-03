@@ -55,7 +55,7 @@ Resources:
         HttpVersion: 'http1.1'
         IPV6Enabled: false
         Origins:
-          - DomainName: !Sub '${S3BucketName}.s3-eu-west-1.amazonaws.com'  #quickfix to eu-west-1 only
+          - DomainName: !Sub '${S3BucketName}.s3-us-west-1.amazonaws.com'  #quickfix to eu-west-1 only
             Id: !Sub 'S3-${S3BucketName}'
             OriginPath: ''
             S3OriginConfig:
